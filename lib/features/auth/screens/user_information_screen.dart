@@ -29,6 +29,7 @@ class _UserInformationScreenState extends ConsumerState<UserInformationScreen> {
     image = await pickImageFromGallery(context);
     setState(() {});
   }
+  //comment added
 
   void storeUserData() async {
     String name = nameController.text.trim();
@@ -81,7 +82,8 @@ class _UserInformationScreenState extends ConsumerState<UserInformationScreen> {
                       ),
                     ),
                   ),
-                  IconButton(onPressed: storeUserData, icon: const Icon(Icons.done))
+                  IconButton(
+                      onPressed: storeUserData, icon: const Icon(Icons.done))
                 ],
               ),
             ],
